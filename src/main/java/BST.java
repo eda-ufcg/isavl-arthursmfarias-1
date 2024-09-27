@@ -21,7 +21,7 @@ public class BST {
             ordem(node.left, balanceamento);
             int x = balance(node);
             if (balanceamento) {
-                if (x > 1 || x > -1) balanceamento = false;
+                if (x > 1 || x < -1) balanceamento = false;
             }
             ordem(node.right, balanceamento);
         }
